@@ -1,0 +1,2 @@
+export PATH="/e/Claude Code/Tools:${PATH}"
+lint-staged
