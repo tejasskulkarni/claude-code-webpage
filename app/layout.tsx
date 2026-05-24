@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@tejaskulkarni", // TODO: real handle
+    creator: "@tejaskofficial",
   },
 };
 
@@ -53,10 +53,7 @@ const jsonLd = {
       "@type": "Person",
       name: "Tejas Kulkarni",
       url: "https://ai-daily.example",
-      sameAs: [
-        "https://www.instagram.com/", // TODO: real handle
-        "https://x.com/", // TODO: real handle
-      ],
+      sameAs: ["https://www.instagram.com/_tejas_kulkarni", "https://x.com/tejaskofficial"],
     },
     {
       "@type": "WebSite",

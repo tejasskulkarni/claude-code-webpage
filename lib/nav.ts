@@ -6,15 +6,16 @@ export const navLinks = [
 ] as const;
 
 export const socialLinks = {
-  instagram: "https://www.instagram.com/", // TODO: replace handle
-  x: "https://x.com/", // TODO: replace handle
+  instagram: "https://www.instagram.com/_tejas_kulkarni",
+  x: "https://x.com/tejaskofficial",
+  linkedin: "https://www.linkedin.com/in/tejasskulkarni/",
 } as const;
 
 export const externalLinks = {
-  courses: "https://example.com/courses", // placeholder
-  referrals: "https://tally.so/r/placeholder", // placeholder
+  courses: "https://www.skills.google/",
+  referrals: "https://www.linkedin.com/jobs/artificial-intelligence-jobs?originalSubdomain=in",
   community: "https://example.com/community", // placeholder
   archive: "https://example.com/archive", // placeholder
 } as const;
 
-export const contactEmail = "hello@ai-daily.example"; // placeholder
+export const contactEmail = "tejaskulkarni791@gmail.com";

@@ -11,6 +11,7 @@ export const analytics = {
   videoProgress: (pct: 25 | 50 | 75 | 100) => track("video_progress", { pct }),
   offeringClicked: (offering: "newsletter" | "courses" | "referrals") =>
     track("offering_clicked", { offering }),
-  socialClicked: (platform: "instagram" | "x") => track("social_clicked", { platform }),
+  socialClicked: (platform: "instagram" | "x" | "linkedin") =>
+    track("social_clicked", { platform }),
   faqOpened: (qid: string) => track("faq_opened", { qid }),
 };
