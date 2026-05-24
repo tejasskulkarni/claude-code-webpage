@@ -73,7 +73,7 @@ export default function SubscribeForm({
 
   if (success) {
     return (
-      <div role="status" className="text-center py-4">
+      <div id={id} role="status" className="text-center py-4">
         <p className="font-body text-body-mobile md:text-body text-ink">
           You&apos;re in. Check your inbox for the confirmation.
         </p>
@@ -82,7 +82,7 @@ export default function SubscribeForm({
   }
 
   return (
-    <form onSubmit={handleSubmit} noValidate>
+    <form id={id} onSubmit={handleSubmit} noValidate>
       {/* Honeypot — off-screen, aria-hidden, tabindex -1 to trap bots */}
       <input
         name="website"
@@ -123,7 +123,7 @@ export default function SubscribeForm({
           type="submit"
           variant="primary"
           size="md"
-          disabled={pending}
+          disabled={!email.trim() || pending}
           className={variant === "hero" ? "sm:w-auto w-full" : "sm:w-auto w-full"}
         >
           {pending ? "Subscribing…" : "Subscribe free"}

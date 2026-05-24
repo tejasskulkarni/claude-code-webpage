@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from "vitest";
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen, waitFor, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import SubscribeForm from "@/components/ui/SubscribeForm";
 import type { SubscribeOutcome } from "@/lib/newsletter";
@@ -12,10 +12,10 @@ describe("SubscribeForm", () => {
   });
 
   it("shows empty-email error on submit with empty input", async () => {
-    const user = userEvent.setup();
     render(<SubscribeForm id="test-form" variant="hero" />);
-    await user.click(screen.getByRole("button", { name: /subscribe/i }));
-    expect(screen.getByText("Enter your email.")).toBeInTheDocument();
+    // Button is disabled when email is empty; submit via form to bypass disabled check
+    fireEvent.submit(document.querySelector("form")!);
+    await waitFor(() => expect(screen.getByText("Enter your email.")).toBeInTheDocument());
   });
 
   it("shows malformed error on submit with 'foo'", async () => {
