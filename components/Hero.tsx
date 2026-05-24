@@ -6,6 +6,10 @@ export default function Hero() {
     <section
       aria-labelledby="section-hero"
       className="relative min-h-[80vh] lg:min-h-screen flex items-center px-4 md:px-8 py-section-mobile md:py-section max-w-7xl mx-auto"
+      style={{
+        background:
+          "radial-gradient(ellipse 80% 40% at 50% 100%, rgba(229,75,42,0.07), transparent)",
+      }}
     >
       <div className="w-full grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center">
         {/* Left column — 60% (3/5) */}

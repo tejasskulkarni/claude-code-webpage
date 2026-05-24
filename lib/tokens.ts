@@ -1,10 +1,10 @@
 export const colors = {
-  paper: "#FAF7F2",
-  ink: "#111111",
-  inkMuted: "#5A5A5A",
+  paper: "#0f0f0f",
+  ink: "#F0EDE8",
+  inkMuted: "#888888",
   accent: "#E54B2A",
   accentInk: "#FFFFFF",
-  rule: "#111111",
+  rule: "#2A2A2A",
 } as const;
 
 export const fonts = {

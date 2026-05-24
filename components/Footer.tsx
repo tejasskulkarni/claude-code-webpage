@@ -28,14 +28,14 @@ export default function Footer() {
   return (
     <>
       <FinalCTA />
-      <footer className="border-t border-ink bg-paper">
+      <footer className="border-t border-ink/10 bg-paper">
         <div className="mx-auto max-w-7xl px-4 md:px-8 py-12 md:py-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
             {/* Column 1: Brand */}
             <div>
               <Link
                 href="/"
-                className="font-display font-semibold text-sm tracking-tight uppercase text-ink hover:opacity-75 transition-opacity"
+                className="font-body font-semibold text-sm tracking-tight uppercase text-ink hover:opacity-75 transition-opacity"
               >
                 Tejas Kulkarni
               </Link>

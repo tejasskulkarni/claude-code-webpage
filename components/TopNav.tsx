@@ -60,15 +60,15 @@ export default function TopNav() {
 
   return (
     <header
-      className={`sticky top-0 z-40 h-16 w-full transition-all duration-200 bg-paper ${
-        scrolled ? "backdrop-blur-sm border-b border-ink/10" : ""
+      className={`sticky top-0 z-40 h-16 w-full transition-all duration-200 border-b border-ink/10 ${
+        scrolled ? "bg-paper/80 backdrop-blur-md" : "bg-paper"
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 md:px-8 h-full flex items-center justify-between">
         {/* Wordmark */}
         <Link
           href="/"
-          className="font-display font-semibold text-sm tracking-tight uppercase text-ink hover:opacity-75 transition-opacity"
+          className="font-body font-semibold text-sm tracking-tight uppercase text-ink hover:opacity-75 transition-opacity"
         >
           Tejas Kulkarni
         </Link>
@@ -120,7 +120,7 @@ export default function TopNav() {
           <div className="flex items-center justify-between mb-10">
             <Link
               href="/"
-              className="font-display font-semibold text-sm tracking-tight uppercase text-ink"
+              className="font-body font-semibold text-sm tracking-tight uppercase text-ink"
               onClick={closeMenu}
             >
               Tejas Kulkarni

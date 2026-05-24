@@ -34,7 +34,7 @@ export default function VideoSection() {
       id="tour"
       aria-labelledby="section-tour"
       ref={sectionRef}
-      className={`bg-ink text-paper py-section-mobile md:py-section transition-[opacity,transform] duration-[600ms] [transition-timing-function:cubic-bezier(0.16,1,0.3,1)] ${
+      className={`bg-paper text-ink py-section-mobile md:py-section transition-[opacity,transform] duration-[600ms] [transition-timing-function:cubic-bezier(0.16,1,0.3,1)] ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
     >
@@ -45,11 +45,11 @@ export default function VideoSection() {
         >
           A 90-second tour
         </h2>
-        <p className="font-body text-body-mobile text-paper/70 text-center mb-10">
+        <p className="font-body text-body-mobile text-ink/70 text-center mb-10">
           What you get when you subscribe, in less time than it takes to make coffee.
         </p>
 
-        <div className="relative max-w-[960px] mx-auto aspect-video bg-ink/50 overflow-hidden rounded-sm">
+        <div className="relative max-w-[960px] mx-auto aspect-video bg-[#1a1a1a] overflow-hidden rounded-sm">
           {visible && (
             <iframe
               src={`https://www.youtube.com/embed/${YOUTUBE_ID}?rel=0&modestbranding=1${loaded ? "" : "&autoplay=0"}`}

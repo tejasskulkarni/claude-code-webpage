@@ -33,7 +33,7 @@ export default function LatestIssues() {
         </a>
       </div>
 
-      <div className="flex flex-col gap-0 divide-y divide-ink">
+      <div className="flex flex-col gap-0 divide-y divide-ink/10">
         {latestIssues.map((issue) => (
           <article key={issue.number} className="py-6 group">
             <div className="flex items-center gap-3 mb-2">
