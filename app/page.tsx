@@ -1,9 +1,14 @@
+import Hero from "@/components/Hero";
+import WhatYouGet from "@/components/WhatYouGet";
+import SectionDivider from "@/components/SectionDivider";
+
 export default function Home() {
   return (
-    <main id="main" className="min-h-screen bg-paper">
-      <div className="flex items-center justify-center h-64">
-        <h1 className="font-display text-h1-mobile md:text-h1 text-ink">AI Daily</h1>
-      </div>
+    <main id="main" className="bg-paper">
+      <Hero />
+      <SectionDivider />
+      <WhatYouGet />
+      <SectionDivider />
     </main>
   );
 }
