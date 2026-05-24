@@ -46,6 +46,26 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      name: "Tejas Kulkarni",
+      url: "https://ai-daily.example",
+      sameAs: [
+        "https://www.instagram.com/", // TODO: real handle
+        "https://x.com/", // TODO: real handle
+      ],
+    },
+    {
+      "@type": "WebSite",
+      name: "AI Daily",
+      url: "https://ai-daily.example",
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -53,6 +73,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>
         <SkipLink />
         <TopNav />
