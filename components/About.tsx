@@ -16,7 +16,7 @@ export default function About() {
       <div className="py-section-mobile md:py-section px-4 md:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-16 items-start">
           {/* Left: portrait (40%) */}
-          <div className="md:col-span-2 relative aspect-[3/4] overflow-hidden rounded-sm hidden md:block">
+          <div className="md:col-span-2 relative aspect-[4/3] md:aspect-[3/4] overflow-hidden rounded-2xl">
             {/* TODO: replace with real portrait */}
             <Image
               src="/images/portrait-about.jpg"

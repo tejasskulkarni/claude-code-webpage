@@ -42,8 +42,8 @@ export default function Hero() {
         </div>
 
         {/* Right column — 40% (2/5) */}
-        <div className="lg:col-span-2 relative hidden lg:block">
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm">
+        <div className="lg:col-span-2 relative order-first lg:order-last">
+          <div className="relative aspect-square lg:aspect-[4/5] w-full max-w-[320px] mx-auto lg:max-w-none overflow-hidden rounded-2xl">
             {/* TODO: replace with real portrait */}
             <Image
               src="/images/portrait-hero.jpg"
