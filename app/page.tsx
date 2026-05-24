@@ -4,6 +4,9 @@ import LatestIssues from "@/components/LatestIssues";
 import Offerings from "@/components/Offerings";
 import About from "@/components/About";
 import VideoSection from "@/components/VideoSection";
+import Testimonials from "@/components/Testimonials";
+import CommunityCTA from "@/components/CommunityCTA";
+import FAQ from "@/components/FAQ";
 import SectionDivider from "@/components/SectionDivider";
 
 export default function Home() {
@@ -20,6 +23,12 @@ export default function Home() {
       <About />
       <SectionDivider />
       <VideoSection />
+      <SectionDivider />
+      <Testimonials />
+      <SectionDivider />
+      <CommunityCTA />
+      <SectionDivider />
+      <FAQ />
       <SectionDivider />
     </main>
   );

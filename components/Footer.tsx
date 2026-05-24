@@ -3,10 +3,9 @@
 import Link from "next/link";
 import { navLinks, socialLinks, externalLinks, contactEmail } from "@/lib/nav";
 import { analytics } from "@/lib/analytics";
+import SubscribeForm from "@/components/ui/SubscribeForm";
 
 export function FinalCTA() {
-  // Imported dynamically in Phase 4 once SubscribeForm exists
-  // Rendered here as a placeholder until Phase 4
   return (
     <section
       id="final-cta"
@@ -16,7 +15,9 @@ export function FinalCTA() {
       <h2 id="section-final-cta" className="font-display text-h2-mobile md:text-h2 text-ink mb-6">
         One last thing — get tomorrow&apos;s issue
       </h2>
-      {/* SubscribeForm rendered here in Phase 4 */}
+      <div className="max-w-xl mx-auto">
+        <SubscribeForm id="subscribe-final" variant="final" />
+      </div>
     </section>
   );
 }
